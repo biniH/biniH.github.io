@@ -12,7 +12,8 @@ html {
 }
 
 body {
-  background-color: #070a12;
+  /* background-color: #070a12; */
+  background-color: red;
 }
 
 * {
