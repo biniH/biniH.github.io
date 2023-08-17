@@ -32,6 +32,10 @@ a {
   margin: 30px 5px;
 }
 
+#menu-toggle {
+  display: none;
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -49,6 +53,10 @@ nav ul li a {
   font-weight: 900;
 }
 
+.contact-mobile {
+  display: none;
+}
+
 /* .line {
   font-size: 24px;
 } */
@@ -56,6 +64,10 @@ nav ul li a {
 .header-line {
   border: 1px solid var(--clr_med_grey);
   height: 24px;
+}
+
+.header-line-mobile {
+  display: none;
 }
 
 .linkHeader1:hover {
@@ -292,11 +304,104 @@ a:hover .fa-linkedin {
 
 @media screen and (max-width: 765px) {
   .headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 30px 20px;
+    position: relative;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 999;
+    background-color: #070a12;
+    height: 600px;
+  }
+
+  nav ul li {
+    list-style: none;
+    padding-left: 25px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  .resume {
+    display: block;
+    color: white;
+    background-color: var(--clr_red);
+    height: 50px;
+    width: 130px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 10px;
+    box-shadow: var(--clr_red) 0px 6px 15px 0px;
+  }
+
+  .resume:hover {
+    color: white;
+  }
+
+  .contact-mobile {
+    display: block;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  nav,
+  nav ul {
+    width: 100%;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+  }
+
+  .header-line-mobile {
+    display: block;
+    width: 80px;
+    height: 0;
+    margin-left: 25px;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 32px;
+    color: var(--clr_med_grey);
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle:checked + nav {
+    display: block;
+  }
+
+  .menu-toggle:not(:checked) ~ nav {
     display: none;
   }
 
   .intro {
-    margin-top: 32px;
+    margin-top: 50px;
     margin-left: 65.3px;
     margin-right: 65.3px;
   }
@@ -336,6 +441,10 @@ a:hover .fa-linkedin {
     padding: 9.5px 14px;
     margin-top: 33px;
     box-shadow: var(--clr_red) 0px 6px 15px 0px;
+  }
+
+  .intro-text_btn_mobile:hover {
+    color: white;
   }
 
   #about {
