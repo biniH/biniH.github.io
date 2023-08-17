@@ -331,7 +331,7 @@ a:hover .fa-linkedin {
 
   nav ul li {
     list-style: none;
-    padding-left: 25px;
+    margin-right: 0px;
   }
 
   nav ul li a {
@@ -375,7 +375,6 @@ a:hover .fa-linkedin {
     display: block;
     width: 80px;
     height: 0;
-    margin-left: 25px;
   }
 
   .fa-bars {
