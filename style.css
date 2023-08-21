@@ -57,18 +57,14 @@ nav ul li a {
   display: none;
 }
 
-/* .line {
-  font-size: 24px;
-} */
-
 .header-line {
   border: 1px solid var(--clr_med_grey);
   height: 24px;
 }
 
-.header-line-mobile {
+/* .header-line-mobile {
   display: none;
-}
+} */
 
 .linkHeader1:hover {
   color: var(--clr_red);
@@ -99,7 +95,7 @@ nav ul li a {
   font-family: "General Sans", sans-serif;
 }
 
-.logo1 {
+.logo {
   border-radius: 50%;
   width: 200px;
   box-shadow: var(--clr_med_grey) 0px 0px 20px 0px;
@@ -155,13 +151,11 @@ strong {
 } */
 
 #about {
-  /* display: grid;
-  grid-template-columns: 2fr 2fr; */
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   color: var(--clr_med_grey);
   margin-top: 100px;
-  gap: 60px;
+  gap: 200px;
   padding: 80px 8px;
 }
 
@@ -210,8 +204,8 @@ strong {
   color: #f0db4f;
 }
 
-.fa-python {
-  color: #ffde57;
+.fa-bootstrap {
+  color: #563d7c;
 }
 
 .fa-react {
@@ -224,7 +218,8 @@ strong {
 
 .about-list {
   display: grid;
-  grid-template-columns: 200px 100px;
+  grid-template-columns: 120px 120px;
+  gap: 40px;
 }
 
 .about-ul {
@@ -244,18 +239,18 @@ strong {
   background-color: var(--clr_dark_grey);
 }
 
-.hrline {
-  width: 100%;
-}
-
 #contact-mobile {
   display: none;
 }
 
+#contact {
+  margin: 50px 8px;
+}
+
 #contact ul {
-  margin: 60px 8px;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
   list-style-type: none;
 }
 
@@ -314,6 +309,7 @@ a:hover .fa-linkedin {
   nav {
     display: none;
     position: absolute;
+    width: 100%;
     top: 60px;
     left: 0px;
   }
@@ -336,6 +332,7 @@ a:hover .fa-linkedin {
 
   nav ul li a {
     font-size: 20px;
+    text-decoration: none;
   }
 
   .resume {
@@ -360,15 +357,6 @@ a:hover .fa-linkedin {
 
   .contact {
     display: none;
-  }
-
-  nav,
-  nav ul {
-    width: 100%;
-  }
-
-  nav ul li a {
-    text-decoration: none;
   }
 
   .header-line-mobile {
@@ -405,7 +393,7 @@ a:hover .fa-linkedin {
     margin-right: 65.3px;
   }
 
-  .logo1 {
+  .logo {
     width: 150px;
   }
 
@@ -485,11 +473,12 @@ a:hover .fa-linkedin {
   }
 
   #contact-mobile ul {
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
     list-style-type: none;
     padding-top: 20px;
+    padding-bottom: 10px;
   }
 
   #contact-mobile ul li a,
