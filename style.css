@@ -62,10 +62,6 @@ nav ul li a {
   height: 24px;
 }
 
-/* .header-line-mobile {
-  display: none;
-} */
-
 .linkHeader1:hover {
   color: var(--clr_red);
   transition: color 0.3s;
@@ -140,15 +136,6 @@ strong {
 .intro-text_btn_mobile {
   display: none;
 }
-
-/* #about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #475569;
-    margin-top: 180px;
-    gap: 1.5rem;
-} */
 
 #about {
   display: grid;
